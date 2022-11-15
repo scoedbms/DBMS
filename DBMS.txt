@@ -1,0 +1,50 @@
+Assignment No B2 : Design and Develop MongoDB Queries using
+CRUD operations. (Use CRUD operations,
+SAVE method, logical operators)
+
+use asib2
+
+ db.createCollection("Library");
+
+ db.Library.insert({"bid":1,"name":"C++"});
+
+ db.Library.insert({"bid":2,"name":"Java"});
+
+ db.Library.insert({"bid":3,"name":"Python"});
+
+db.Library.find();
+
+db.Library.find().pretty();
+
+db.Library.update({name:"Python"},{$set:{"name":"Python3.7"}})
+
+db.Library.find();
+
+db.Library.remove({"bid":1});
+
+db.Library.find();
+
+db.Library.find({"name":"Java"});
+
+ db.Library.insert({"bid":4,"name":"Java","desc":"fake book"});
+
+db.Library.find();
+
+db.Library.find({"name":"Java"});
+
+db.Library.find({$and:[{"name":"Java"},{"desc":"fake book"}]});
+
+db.Library.find({$or:[{"name":"Java"},{"desc":"fake book"}]});
+
+db.Library.insert({"bid":4,"name":"my story","cost":500});
+
+db.Library.insert({"bid":4,"name":"my story2.0","cost":800});
+
+db.Library.insert({"bid":4,"name":"my story beta","cost":60});
+
+db.Library.find({"cost":{$gte:100}})
+
+db.Library.find({"cost":{$in:[100,200,300,500]}})
+
+
+
