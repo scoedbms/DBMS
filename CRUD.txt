@@ -1,4 +1,4 @@
-Assignment No B2 : Design and Develop MongoDB Queries using
+ B.2 Design and Develop MongoDB Queries using
 CRUD operations. (Use CRUD operations,
 SAVE method, logical operators)
 
